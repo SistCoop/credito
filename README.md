@@ -1,2 +1,2 @@
-# credito
-credito
+# persona
+personal model

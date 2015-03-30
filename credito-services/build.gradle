@@ -1,0 +1,5 @@
+dependencies {
+	compile project(':credito-integration:credito-client')
+	compile project(':credito-model:credito-model-api')
+	compile project(':credito-model:credito-model-jpa')	
+}
