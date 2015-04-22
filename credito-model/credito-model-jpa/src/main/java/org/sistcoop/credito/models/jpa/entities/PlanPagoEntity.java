@@ -112,7 +112,6 @@ public class PlanPagoEntity {
 		this.optlk = optlk;
 	}
 	
-	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
