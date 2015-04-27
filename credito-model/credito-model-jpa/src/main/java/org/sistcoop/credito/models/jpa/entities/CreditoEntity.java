@@ -34,8 +34,8 @@ public class CreditoEntity {
 	private static final long serialVersionUID = 1L;
 	
 	private Long id;
-	private String tipoDoc;
-	private String numeroDoc;
+	private String tipoDocumento;
+	private String numeroDocumento;
 	private String codigoProducto;
 	private Integer numeroCuotas;
 	private String frecuenciaPago;
@@ -71,12 +71,12 @@ public class CreditoEntity {
 	@NotEmpty
 	@NotBlank
 	@Column(name = "TIPO_DOCUMENTO", nullable = false)
-	public String getTipoDoc() {
-		return tipoDoc;
+	public String getTipoDocumento() {
+		return tipoDocumento;
 	}
 
-	public void setTipoDoc(String tipoDoc) {
-		this.tipoDoc = tipoDoc;
+	public void setTipoDocumento(String tipoDocumento) {
+		this.tipoDocumento = tipoDocumento;
 	}
 
 	@NotNull
@@ -84,12 +84,12 @@ public class CreditoEntity {
 	@NotEmpty
 	@NotBlank
 	@Column(name = "NUMERO_DOCUMENTO")
-	public String getNumeroDoc() {
-		return numeroDoc;
+	public String getNumeroDocumento() {
+		return numeroDocumento;
 	}
 
-	public void setNumeroDoc(String numeroDoc) {
-		this.numeroDoc = numeroDoc;
+	public void setNumeroDocumento(String numeroDocumento) {
+		this.numeroDocumento = numeroDocumento;
 	}
 
 	@NotNull
