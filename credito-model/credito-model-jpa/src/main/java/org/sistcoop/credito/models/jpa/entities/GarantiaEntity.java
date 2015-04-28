@@ -4,12 +4,13 @@ import javax.persistence.Entity;
 import javax.persistence.Index;
 import javax.persistence.Table;
 
-@Entity
-@Table(name = "AVAL", indexes = { @Index(columnList = "id") })
-public class Aval {
 
-	private static final long serialVersionUID = 1L;
+@Entity
+@Table(name = "Garantia", indexes = { @Index(columnList = "id") })
+public class GarantiaEntity {
 	
+	private static final long serialVersionUID = 1L;
+
 	private Integer id;
 
 	public Integer getId() {
