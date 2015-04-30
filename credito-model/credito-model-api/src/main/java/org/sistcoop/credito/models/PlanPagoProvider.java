@@ -1,5 +1,7 @@
 package org.sistcoop.credito.models;
 
-public interface PlanPagoProvider {
+import org.sistcoop.credito.provider.Provider;
+
+public interface PlanPagoProvider extends Provider{
 
 }

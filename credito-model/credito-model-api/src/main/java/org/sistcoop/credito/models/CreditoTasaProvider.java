@@ -1,5 +1,7 @@
 package org.sistcoop.credito.models;
 
-public interface CreditoTasaProvider {
+import org.sistcoop.credito.provider.Provider;
+
+public interface CreditoTasaProvider extends Provider{
 
 }
