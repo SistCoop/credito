@@ -1,4 +1,4 @@
-package org.sistcoop.producto.models.jpa;
+package org.sistcoop.credito.models.jpa;
 
 import java.math.BigDecimal;
 

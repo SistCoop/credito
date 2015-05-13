@@ -1,23 +1,27 @@
-package org.sistcoop.producto.models.jpa;
+package org.sistcoop.credito.models.jpa;
 
 import javax.ejb.Local;
 import javax.ejb.Stateless;
 import javax.ejb.TransactionAttribute;
 import javax.ejb.TransactionAttributeType;
 import javax.inject.Named;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 
-import org.sistcoop.credito.models.CreditoTasaProvider;
+import org.sistcoop.credito.models.AvalProvider;
 
 @Named
 @Stateless
-@Local(CreditoTasaProvider.class)
+@Local(AvalProvider.class)
 @TransactionAttribute(TransactionAttributeType.REQUIRED)
-public class JpaCreditoTasaProvider implements CreditoTasaProvider{
+public class JpaAvalProvider implements AvalProvider{
 
+	@PersistenceContext
+	protected EntityManager em;
+	
 	@Override
 	public void close() {
 		// TODO Auto-generated method stub
-		
 	}
 
 }

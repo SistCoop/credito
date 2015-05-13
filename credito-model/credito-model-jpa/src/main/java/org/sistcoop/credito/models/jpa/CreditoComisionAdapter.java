@@ -1,11 +1,13 @@
-package org.sistcoop.producto.models.jpa;
+package org.sistcoop.credito.models.jpa;
 
 import java.math.BigDecimal;
 
+import org.sistcoop.credito.models.CreditoComisionModel;
 import org.sistcoop.credito.models.CreditoModel;
-import org.sistcoop.credito.models.CreditoTasaModel;
+import org.sistcoop.credito.models.enums.Frecuencia;
+import org.sistcoop.credito.models.enums.TipoValor;
 
-public class CreditoTasaAdapter implements CreditoTasaModel{
+public class CreditoComisionAdapter implements CreditoComisionModel{
 
 	/**
 	 * 
@@ -25,13 +27,25 @@ public class CreditoTasaAdapter implements CreditoTasaModel{
 	}
 
 	@Override
+	public String getDenominacion() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
 	public BigDecimal getValor() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public String getTasa() {
+	public TipoValor getTipoValor() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Frecuencia getFrecuencia() {
 		// TODO Auto-generated method stub
 		return null;
 	}

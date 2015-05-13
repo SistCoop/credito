@@ -1,4 +1,4 @@
-package org.sistcoop.producto.models.jpa;
+package org.sistcoop.credito.models.jpa;
 
 import javax.ejb.Local;
 import javax.ejb.Stateless;
@@ -6,14 +6,14 @@ import javax.ejb.TransactionAttribute;
 import javax.ejb.TransactionAttributeType;
 import javax.inject.Named;
 
-import org.sistcoop.credito.models.PlanPagoProvider;
+import org.sistcoop.credito.models.CreditoComisionProvider;
 
 
 @Named
 @Stateless
-@Local(PlanPagoProvider.class)
+@Local(CreditoComisionProvider.class)
 @TransactionAttribute(TransactionAttributeType.REQUIRED)
-public class JpaPlanPagoProvider implements PlanPagoProvider{
+public class JpaCreditoComisionProvider implements CreditoComisionProvider{
 
 	@Override
 	public void close() {

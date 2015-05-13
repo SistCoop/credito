@@ -1,8 +1,8 @@
-package org.sistcoop.producto.models.jpa;
+package org.sistcoop.credito.models.jpa;
 
-import org.sistcoop.credito.models.AvalModel;
+import org.sistcoop.credito.models.GarantiaModel;
 
-public class AvalAdapter implements AvalModel{
+public class GarantiaAdapter implements GarantiaModel{
 
 	/**
 	 * 
